@@ -17,9 +17,11 @@ module.exports = {
   },
   ignorePatterns: ['.eslintrc.js'],
   rules: {
+    "no-var": 2,
+    "getter-return": [2, { "allowImplicit": true }],
     '@typescript-eslint/interface-name-prefix': 'off',
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
-  },
+    '@typescript-eslint/explicit-function-return-type': 'on',
+    '@typescript-eslint/explicit-module-boundary-types': 'on',
+    '@typescript-eslint/no-explicit-any': 'on'
+  }
 };
