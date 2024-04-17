@@ -18,4 +18,8 @@ export class UserService {
         user.password = hashSync(user.password, 10);
         this.users.push(user);
     }
+
+    findByUsername(username: string): UserDto | null {
+        return this.users.find(user => user.username === username);
+    }
 }
